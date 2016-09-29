@@ -1,0 +1,16 @@
+﻿@model PetersRestraunt.Models.ApplicationUser
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <h1>Welcome to Peters Restraunt</h1>
+    <h2>This is our online menu <a href="~/Menu/ShowMenu" class="btn btn-default">Please click me to view the menu</a></h2>
+@*@if (Model.role == "customer")
+{
+    <a><h2>Book a table</h2></a>
+}*@
+
+    <a href="~/Menu/"><h2>Book a table</h2></a>
+</div>

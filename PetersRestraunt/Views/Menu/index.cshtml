@@ -1,0 +1,18 @@
+﻿@model IEnumerable<PetersRestraunt_Models.Menu>
+@{
+    ViewBag.Title = "index";
+}
+
+<h2>Search</h2>
+
+<form method="get" action="@Url.Action("index")" data-pr-target="#menus" data-pr-Send="true">
+
+    Title Search <input type="search" name="search" />
+ 
+       <input type="submit" value="Search" />
+</form>
+
+<h2>Menu</h2>
+
+
+@Html.Partial("_ShowMenu", Model);

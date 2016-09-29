@@ -1,0 +1,16 @@
+﻿@model PetersRestraunt.Models.BookTableViewModel
+
+@{
+    ViewBag.Title = "BookATable";
+}
+
+<h2>Book A Table</h2>
+
+<form>
+    Which table do you want? @Html.DropDownList("tables")
+    How many people are in your party <input type="number"/>
+    <input type="submit" value="submit"/>
+</form>
+
+
+
